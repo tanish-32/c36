@@ -1,0 +1,32 @@
+<div id="game">
+	<!-- STATS BAR -->
+	<stats-bar></stats-bar>
+	<!-- LEFT NAV -->
+	<div id="left-nav">
+		<a href="/play/feed"><div id="nav-feed" class="nav nav-feed"></div></a>
+		<a href="/play/exercise"><div id="nav-game" class="nav nav-game"></div></a>
+		<a href="/play/train"><div class="nav nav-train"></div></a>
+	</div>
+	<!-- GAME AREA -->
+	<div id="gameplay">
+
+		<div id = "default-anim"></div>
+		<feed ng-show="state.params.activity == 'feed'"></feed>
+		<clean ng-show="state.params.activity == 'clean'"></clean>
+		<exercise ng-show="state.params.activity == 'exercise'"></exercise>
+		<gameover ng-show="state.params.activity == 'gameover'"></gameover>
+		<train ng-show="state.params.activity == 'train' "></train>
+		<nurse ng-show="state.params.activity == 'nurse'"></nurse>
+		<sleep ng-show="state.params.activity == 'sleep'"></sleep>
+		<stats ng-show="state.params.activity == 'stats'"></stats>
+	
+	</div>
+	<!-- RIGHT NAV -->
+	<div id="right-nav">
+		<a href="/play/nurse"><div id="nav-nurse" class="nav nav-nurse"></div></a>
+		<a href="/play/clean"><div id="nav-clean" class="nav nav-clean"></div></a>
+		<a href="/play/sleep"><div id="nav-sleep" class="nav nav-sleep"></div></a>
+	</div>
+</div>
+<sickpet></sickpet>
+<game-over></game-over>

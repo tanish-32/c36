@@ -1,0 +1,47 @@
+.moleBox {
+	position: absolute;
+	height: 115px;
+	width: 115px;
+}
+
+#moleBox1 {
+	margin-top: 23%;
+	margin-left: 10%;
+}
+
+#moleBox2 {
+	margin-left: 70%;
+	margin-top: 38%;
+}
+
+#moleBox3 {
+	margin-left: 35%;
+	margin-top: 63%;
+}
+
+.moleYoda {
+	position: absolute;
+	height: 85px;
+	width: 85px;
+}
+
+#moleYoda1 {
+	margin-left: 12%;
+}
+
+#moleYoda2 {
+	margin-left: 72%;
+}
+
+#moleYoda3 {
+	margin-left: 37%;
+}
+
+.moleScore {
+	position: absolute;
+	margin-left: 45%;
+}
+
+#accountCreatedMessage {
+	color: green;
+}

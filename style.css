@@ -1,0 +1,458 @@
+/*  MAIN  */
+body {
+	background-image: url('/img/bg2.jpg');
+	background-repeat:no-repeat;
+	background-position: top center;
+	background-attachment: fixed;
+	margin: 0;
+}
+h1 {
+	font-family:'Comfortaa';
+	color:white;
+	text-shadow: 2px 2px 8px #1fbee8;
+	font-size: 50pt;
+}
+
+/* ===== LOGIN/SIGNUP FORMS ===== */
+#logo {
+	margin-top:20%;
+	margin-bottom:40px;
+}
+#gameover {
+	margin-top:10%;
+	margin-bottom:30px;
+}
+#home {
+	margin: 0 auto;
+	width: 500px;
+	min-height:550px;	
+	text-align:center;
+	padding:30px;
+	background: -webkit-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.5)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.5)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.5)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.5)); /* Standard syntax (must be last) */
+}
+#home-form {
+	text-align:center;
+}
+.home-button {
+	background-color:#1fbee8;
+	border:none;
+	width:180px;
+	height: 50px;
+	font-family: 'Comfortaa';
+	font-size:18pt;
+	border-radius:8px;
+	line-height:2.2;
+	text-transform:uppercase;
+	margin:10px;
+	color:white;
+}
+.home-button:hover{
+	background-color:#ffca28;
+	color:#fff;
+}
+.home-form {
+	text-align:center;
+	font-family: 'Comfortaa';
+	font-weight: 700;
+	font-size:12pt;
+}
+.home-form img {
+	margin:10px;
+}
+.home-form h3 {
+	font-family: 'Comfortaa';
+	font-size:35pt;
+	color: #20a1ce;
+	text-shadow: 2px 2px 9px #fff;
+	/*border-bottom:2px solid white;*/
+}
+.home-form h4 {
+	font-family: 'Comfortaa';
+	font-size:26pt;
+	color: #20a1ce;
+	/*color: #228ec4;*/
+	text-shadow: 2px 2px 9px #fff;
+	margin-bottom:30px;
+}
+#home-form label {
+	color:#1fbee8;
+	display:block;
+	text-align:left;
+	font-family: 'Comfortaa';
+	font-weight: 700;
+	font-size:12pt;
+	text-transform:uppercase;
+	padding-bottom:8px;
+	margin-left:60px;
+}
+.home-form input,
+.home-form textarea {
+  width: 350px;
+  border: none;
+  border-bottom: 2px solid #1fbee8;
+  /*left: 25px;*/
+  padding: 14px;
+  padding-bottom:5px;
+  margin-bottom:20px;
+  font-family: 'Comfortaa';
+  font-weight:500;
+  color:#ffca28;
+  text-transform: uppercase;
+  font-size:20px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.home-form input:focus {
+	border-bottom:4px solid #ffca28;
+}
+.home-form button{
+	background-color:#1fbee8;
+	border:none;
+	width:120px;
+	height:38px;
+	font-family: 'Comfortaa';
+	font-size:16pt;
+	line-height: 1.9;
+	border-radius:5px;
+	text-transform:uppercase;
+	margin:4px;
+	color:white;
+}
+.home-form button:hover{
+	background-color:#ffca28;
+	color:#fff;
+}
+hr {
+	background-color: rgba(255, 255, 255, 0.7);
+	width:450px;
+	margin-top:52px;
+	border:none;
+	height:2px;
+}
+.alert-red {
+	color:red;
+}
+/*form placeholder color*/
+::-webkit-input-placeholder {
+   color: #B0BEC5;
+}
+:-moz-placeholder {
+   color: #B0BEC5;  
+}
+::-moz-placeholder {  
+   color: #B0BEC5;  
+}
+:-ms-input-placeholder {  
+   color: #B0BEC5;  
+}
+/*pet images*/
+.pet1, .pet2, .pet4 {
+	width: 126px;
+	float:left;
+	text-align:center;
+}
+.pet3 {
+	width:120px;
+	float:left;
+	text-align:center;
+}
+.clear {
+	clear:both;
+}
+
+/* ========= GAMEPLAY PAGE ========= */
+#game {
+	margin: 45px auto;
+	background-image:url('/img/gamebg.png');
+	width:753px;
+	height:558px;
+	overflow: hidden;
+}
+#gameplay {
+	width:444px;
+	height:416px;
+	float:left;
+	position: relative;
+	left:60px;
+	top:30px;
+	overflow: hidden;
+}
+
+/*  GAMEPLAY PAGE: stats bar  */
+#stats {
+	position: relative;
+	left:176px;
+	top: 50px;
+	height:80px;
+	display:block;
+}
+#health-stats-icon {
+	background-image:url('/img/health-icon.png');
+	width: 57px;
+	height: 46px;
+	float:left;
+	margin-right:6px;
+	overflow: hidden;
+}
+#mood-stats-icon {
+	background-image:url('/img/mood-icon.png');
+	width: 50px;
+	height: 50px;
+	float:left;
+	margin-left: 26px;
+	margin-right:6px;
+	overflow: hidden;
+}
+.stats-bar {
+	float:left;
+	width: 8px;
+	height: 38px;
+	background-color: #bcbcbc;
+	border-radius: 4px;
+	margin-left:5px;
+	margin-top: 5px;
+	overflow: hidden;
+}
+.stats-bar:hover {
+	float:left;
+	width: 8px;
+	height: 38px;
+	background-color: #ff9e16;
+	border-radius: 4px;
+	margin-left:5px;
+	margin-top: 5px;
+  overflow: hidden;
+}
+
+/*  GAMEPLAY PAGE: navigation   */
+.nav {
+	height: 75px;
+	margin-top: 58px;
+}
+.navH {
+	width: 95px;
+	height: 75px;
+	margin-top: 58px;
+}
+#left-nav {
+	float:left;
+	position:relative;
+	left: 36px;
+	top: 0px;
+	width:95px;
+	overflow: hidden;
+	clear:both;
+	text-align:center;
+}
+#right-nav {
+	float:left;
+	position: relative;
+	left:90px;
+	top:0px;
+	width:95px;
+	overflow: hidden;
+}
+/*left side*/
+.nav-feed {
+	background-image:url('/img/feed-icon.svg');
+	width:95px;
+}
+.nav-feed:hover {
+	background-image:url('/img/feed-iconH.svg');
+	width:95px;
+}
+.nav-feed-alert {
+	background-image:url('/img/feed-iconH.svg');
+	border-radius: .5;
+	border: dashed 2px orange;
+}
+.nav-game {
+	background-image:url('/img/game-icon.svg');
+	width:95px;
+}
+.nav-game:hover {
+	background-image:url('/img/game-iconH.svg');
+	width:95px;
+}
+.nav-game-alert {
+	background-image:url('/img/game-iconH.svg');
+	border-radius: .5;
+	border: dashed 2px orange;
+}
+.nav-train {
+	background-image:url('/img/train-icon.svg');
+	width:95px;
+}
+.nav-train:hover {
+	background-image:url('/img/train-iconH.svg');
+	width:95px;
+}
+/*right side*/
+.nav-nurse {
+	background-image:url('/img/nurse-icon.svg');
+	width:95px;
+}
+.nav-nurse:hover {
+	background-image:url('/img/nurse-iconH.svg');
+	width:95px;
+}
+.nav-nurse-alert {
+	background-image:url('/img/nurse-iconH.svg');
+	border-radius: .5;
+	border: dashed 2px orange;
+}
+.nav-clean {
+	background-image:url('/img/clean-icon.svg');
+	width:95px;
+}
+.nav-clean:hover {
+	background-image:url('/img/clean-iconH.svg');
+	width:95px;
+}
+.nav-clean-alert {
+	background-image:url('/img/clean-iconH.svg');
+	border-radius: .5;
+	border: dashed 2px orange;
+}
+.nav-sleep {
+	background-image:url('/img/sleep-icon.svg');
+	width:95px;
+}
+.nav-sleep:hover {
+	background-image:url('/img/sleep-iconH.svg');
+	width:95px;
+}
+.nav-sleep-alert {
+	background-image:url('/img/sleep-iconH.svg');
+	border-radius: .5;
+	border: dashed 2px orange;
+}
+#default-anim {
+	position: absolute;
+}
+feed, clean, gameover, train, nurse, sleep, stats {
+	position: absolute;
+}
+
+
+/* ===== COMPONENTS (activities) ===== */
+
+/* ALL */
+
+h4 {
+	font-family:'Comfortaa';
+	color:#1fbee8;
+	font-size: 25pt;
+	margin-top:10px;
+	margin-left:25px;
+	margin-bottom:0;
+}
+
+feed button, clean button, nurse button, sleep button{
+	background-color:#1fbee8;
+	border:none;
+	width:180px;
+	height: 43px;
+	font-family: 'Comfortaa';
+	font-size:18pt;
+	border-radius:8px;
+	line-height:2;
+	text-transform:uppercase;
+	margin:10px;
+	color:white;
+	position:absolute;
+	left:120px;
+	top:360px;
+}
+
+exercise button {
+	background-color:#1fbee8;
+	border:none;
+	width:200px;
+	height: 43px;
+	font-family: 'Comfortaa';
+	font-size:14pt;
+	margin:8px;
+	border-radius:8px;
+	line-height:2.5;
+	text-transform:uppercase;
+	color:white;
+	position:relative;
+}
+
+feed button:hover, clean button:hover, nurse button:hover, sleep button:hover, exercise button:hover{
+	background-color:#ffca28;
+	color:#fff;
+}
+
+feed button:active, clean button:active, nurse button:active, sleep button:active, exercise button:active{
+	background-color:#1fbee8;
+	color:#fff;
+}
+
+/* PET STATS */
+#pet-stats {
+	background-color:rgba(255,255,255,.8); 
+	border:4px solid #1fbee8;
+	border-radius:18px;
+	width:398px;
+	height:170px;
+	margin-top:20px;
+	margin-left:20px;
+}
+h5 {
+margin-left:25px;
+margin-top:20px;
+margin-bottom:0;
+font-family: 'Comfortaa';
+font-size:20pt;
+color:gray;
+}
+h6 {
+margin-left:25px;
+margin-top:20px;
+margin-bottom:0;
+font-family: 'Comfortaa';
+font-size:16pt;
+color:gray;
+}
+
+/* PLAY */
+
+exercise {
+font-family: 'Comfortaa';
+font-size:16pt;
+color:#1fbee8;
+}
+
+
+
+/* ========= GAMEPLAY PAGE ========= */
+
+/* NEW PET */
+#new-pet {
+	text-align:center;
+	width:600px;
+	margin:0 auto;
+}
+.newpet-form h5 {
+	font-family: 'Comfortaa';
+	font-size:22pt;
+	margin-bottom:10px;
+	color: #20a1ce;
+}
+.newpet-form input{
+	width:200px;
+}
+.pick-pet {
+	margin-left:50px;
+	position:relative;
+	background-color:pink;
+}
+
+.name {
+	display:block;
+	clear:both;
+}
